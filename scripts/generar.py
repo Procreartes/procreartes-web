@@ -10,7 +10,7 @@ import sys
 import pathlib
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from web import RAIZ, Sitio, ICO, esc, datos, mailto  # noqa: E402
+from web import RAIZ, Sitio, ICO, esc, datos, mailto, imagen, portada_foto, foto  # noqa: E402
 
 CORREO = "hola@procreartes.com"
 
@@ -70,11 +70,12 @@ def inicio():
     tarjetas = ""
     for p in PROYECTOS:
         enlace = p.get("enlace") or ""
-        tarjetas += f'''<li class="proyecto aparece" data-cat="{esc(p.get("categoria") or "Otros")}">
-      <p class="proyecto-meta"><span>{esc(p.get("categoria"))}</span>{f"<span>{esc(p['anio'])}</span>" if p.get("anio") else ""}</p>
+        img = imagen(p.get("imagen"), p.get("imagen_alt") or p.get("titulo"), "(min-width: 1100px) 360px, (min-width: 700px) 45vw, 92vw", "proyecto-foto")
+        tarjetas += f'''<li class="proyecto aparece{" con-foto" if img else ""}" data-cat="{esc(p.get("categoria") or "Otros")}">
+      {img}<div class="proyecto-txt"><p class="proyecto-meta"><span>{esc(p.get("categoria"))}</span>{f"<span>{esc(p['anio'])}</span>" if p.get("anio") else ""}</p>
       <h3>{esc(p.get("titulo"))}</h3><p>{esc(p.get("texto"))}</p>
       {f'<a href="{esc(enlace)}">Ver la web {ICO["flecha"]}</a>' if enlace.startswith("https://") else ""}
-    </li>'''
+    </div></li>'''
     principios = "".join(f"<li>{ICO['check']}<span>{esc(x)}</span></li>" for x in PRINCIPIOS)
     ld = json.dumps({
         "@context": "https://schema.org", "@type": "NGO", "name": "Asociación Sociocultural ProCreArtes",
@@ -83,6 +84,9 @@ def inicio():
                     "addressLocality": "Santa Brígida", "addressCountry": "ES"},
     }, ensure_ascii=False)
 
+    hero = portada_foto("publico", "Público con los brazos en alto frente a un escenario iluminado")
+    mosaico = "".join(f'<span class="mini mini-{i}">{x}</span>' for i, x in enumerate(
+        [foto("mimos", "Pareja de mimos actuando en la calle", "200px"), foto("banda", "Siluetas de una banda en el escenario", "200px")]) if x)
     cuerpo = f'''<section class="portada">
   <div class="contenedor portada-grid">
     <div>
@@ -94,7 +98,7 @@ def inicio():
         <a class="boton boton-linea" href="#contacto">Contacto</a>
       </div>
     </div>
-    <div class="portada-arte">{a_svg()}</div>
+    <div class="portada-arte{" con-foto" if hero else ""}">{hero}{a_svg()}{mosaico}</div>
   </div>
 </section>
 
