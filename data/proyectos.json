@@ -1,0 +1,98 @@
+[
+  {
+    "id": "gala-talentos",
+    "titulo": "Gala Talentos Gran Canaria Joven",
+    "categoria": "Juventud",
+    "anio": "2026",
+    "texto": "Concurso de talento joven y gala de entrega de premios en el Teatro CICCA, para la Consejería de Educación y Juventud del Cabildo de Gran Canaria.",
+    "enlace": "https://talentos.procreartes.com"
+  },
+  {
+    "id": "festival-latino",
+    "titulo": "Festival Latino «Gran Canaria Joven»",
+    "categoria": "Juventud",
+    "anio": "2026",
+    "texto": "Programa de conciertos, talleres, exhibiciones, exposiciones y stands en la Villa de Teror.",
+    "enlace": ""
+  },
+  {
+    "id": "feria-rumbo",
+    "titulo": "Feria de la Juventud #Rumbo",
+    "categoria": "Juventud",
+    "anio": "",
+    "texto": "Cinco ediciones consecutivas con más de 2.000 estudiantes de institutos y ciclos formativos cada año: idea, contratación de más de 25 actividades y 20 stands, montaje, logística, guaguas para más de 40 centros y comunicación.",
+    "enlace": ""
+  },
+  {
+    "id": "dia-juventud",
+    "titulo": "Festival del Día Internacional de la Juventud",
+    "categoria": "Juventud",
+    "anio": "",
+    "texto": "Festival cultural que reunió a artistas jóvenes emergentes con nombres consolidados como Efecto Pasillo, El Chojin o Javier Santaolalla. Producción artística y técnica completa.",
+    "enlace": ""
+  },
+  {
+    "id": "teatropeya",
+    "titulo": "Teatropeya",
+    "categoria": "Artes escénicas",
+    "anio": "",
+    "texto": "Muestra artística con un centenar de representaciones en espacios culturales y urbanos de las islas de la provincia de Santa Cruz de Tenerife, con más de 10.000 personas de público.",
+    "enlace": ""
+  },
+  {
+    "id": "ida-y-vuelta",
+    "titulo": "Ida y Vuelta",
+    "categoria": "Artes escénicas",
+    "anio": "",
+    "texto": "Espectáculo de ritmo, percusión y teatro creado desde cero, con más de 120 personas implicadas y una edad media inferior a 35 años, estrenado al aire libre en Las Palmas de Gran Canaria.",
+    "enlace": ""
+  },
+  {
+    "id": "sal",
+    "titulo": "SAL · Gastronomía escénica",
+    "categoria": "Artes escénicas",
+    "anio": "2022",
+    "texto": "Experiencia que fusiona la gastronomía con la música, la danza y el teatro. Ganador del concurso de ayudas del Festival Temudas Fest de Las Palmas de Gran Canaria.",
+    "enlace": ""
+  },
+  {
+    "id": "vispera-reyes",
+    "titulo": "Víspera de Reyes en Las Palmas de Gran Canaria",
+    "categoria": "Grandes eventos",
+    "anio": "",
+    "texto": "Más de 50.000 personas, 4 escenarios y 10 grupos de música, con un dispositivo de seguridad de más de 50 medios coordinado con Ayuntamiento, Policía y Protección Civil.",
+    "enlace": ""
+  },
+  {
+    "id": "parking-fest",
+    "titulo": "Park in Fest",
+    "categoria": "Grandes eventos",
+    "anio": "2020",
+    "texto": "El primer festival drive-in de Canarias tras el confinamiento, en el aparcamiento de INFECAR, con el apoyo del Cabildo de Gran Canaria.",
+    "enlace": ""
+  },
+  {
+    "id": "sunblast",
+    "titulo": "Plan de sostenibilidad del Sunblast",
+    "categoria": "Sostenibilidad",
+    "anio": "",
+    "texto": "Primer plan de sostenibilidad del festival, con el apoyo del Gobierno de Canarias: recogida selectiva, formación a más de 500 personas de barra, agua potable, punto violeta y compensación de la huella de carbono.",
+    "enlace": ""
+  },
+  {
+    "id": "dia-mayor",
+    "titulo": "Campaña del Día Internacional del Mayor",
+    "categoria": "Campañas",
+    "anio": "",
+    "texto": "Campaña para la Viceconsejería de Bienestar Social del Gobierno de Canarias que pone en valor la sabiduría y la experiencia de las personas mayores, en televisión, radio y prensa de todo el archipiélago.",
+    "enlace": ""
+  },
+  {
+    "id": "zonas-comerciales",
+    "titulo": "Campaña de Zonas Comerciales Abiertas",
+    "categoria": "Campañas",
+    "anio": "",
+    "texto": "Campaña del Ayuntamiento de Las Palmas de Gran Canaria para animar a comprar en el comercio de barrio: idea, guion, grabación, producción y difusión.",
+    "enlace": ""
+  }
+]
